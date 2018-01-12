@@ -14,6 +14,9 @@ h1, .boxHead, h2, h3 {
 h3 {
 	color: #4aaaa5;
 	font-size: 20px;
+	padding: 0 0 20px 0;
+	margin: 20px;
+	border-bottom: 1px solid #ccc;
 }
 
 .main p {
@@ -56,9 +59,78 @@ h1 {
 	color: #777777;	
 }
 
-.projects a {
-
+#projects {
+	position: relative;
 }
+
+#projects a {
+	float: left;
+	margin: 2px;
+}
+
+#hangman {
+	float: left;
+	position: absolute;
+	text-align: center;
+	background-color: #4aaaa5;
+	font-size: 28px;
+	color: white;
+	width: 250px;
+	padding: 25px;
+	margin: 110px 0 0 2px;
+}
+
+#rpg {
+	float: right;
+	position: absolute;
+	right: 4px;
+	text-align: center;
+	background-color: #4aaaa5;
+	font-size: 28px;
+	color: white;
+	width: 250px;
+	padding: 25px;
+	margin: 110px 0 0 0;
+}
+
+#trivia {
+	float: left;
+	position: absolute;
+	left: 2px;
+	bottom: 30px;
+	text-align: center;
+	background-color: #4aaaa5;
+	font-size: 28px;
+	color: white;
+	width: 250px;
+	padding: 25px;
+}
+
+#rutgers {
+	float: left;
+	position: absolute;
+	right: 4px;
+	bottom: 30px;
+	text-align: center;
+	background-color: #4aaaa5;
+	font-size: 28px;
+	color: white;
+	width: 250px;
+	padding: 25px;
+}
+
+/*#rockPaper {
+	float: left;
+	position: absolute;
+	text-align: center;
+	background-color: #4aaaa5;
+	font-size: 28px;
+	color: white;
+	width: 250px;
+	padding: 25px;
+	margin: 510px 0 0 0;
+	bottom: 0;
+}*/
 
 body {
 	position: relative;
@@ -90,8 +162,7 @@ body {
 	font-size: 24px;
 	padding-bottom: 20px;
 	margin-bottom: 20px;
-	border-bottom: 2px solid #cccccc;
-	/*clear: both;*/
+	border-bottom: 3px solid #ccc;
 }
 
 .meImage {
@@ -137,10 +208,34 @@ form {
 input[type=text] {
 	width: 610px;
 	margin: 8px 0;
-	padding: 20px;
+	padding: 10px;
+	border-style: solid;
+	border-color: #ccc;
+	border-width: 2px;
+}
+
+input[name=name] {
+	background-image: John Smith;
+}
+
+textarea[name=message] {
+	height: 150px;
+	width: 610px;
+	max-width: 610px;
+	margin: 8px 0;
+	padding: 10px;
+	border-style: solid;
+	border-color: #ccc;
+	border-width: 2px;
 }
 
 button {
-
+	width: 100px;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 15px 20px;
+    margin: 8px 0;
+    border: solid;
+    border-radius: 4px;
+    cursor: pointer;
 }
-
